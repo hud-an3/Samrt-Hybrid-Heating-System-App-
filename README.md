@@ -1,79 +1,70 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Smart Hybrid Heating System – Mobile App
 
-# Getting Started
+## Overview
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+This repository contains the **React Native mobile application** developed as part of my **Smart Hybrid Heating System** final year project.
 
-## Step 1: Start the Metro Server
+The app serves as the **user interface and control layer** for a hybrid **Electric + Gas heating system**, enabling real-time monitoring, intelligent control, and user feedback. It is integrated with **Firebase Cloud** for data synchronization, communicates with **ESP32-based hardware**, and leverages a **Machine Learning (MLP) model** deployed via **FastAPI** for intelligent decision-making.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+The mobile app acts as the bridge between the user, cloud, hardware, and ML model.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+---
+
+## Key Features
+
+* 📱 Real-time temperature and system status monitoring
+* 🔥 Manual and automatic switching between **Electric** and **Gas** heating modes
+* 🤖 Intelligent heating recommendations using an **MLP model**
+* ☁️ Cloud-based control via **Firebase Realtime Database**
+* ⚙️ Remote hardware control through ESP32
+* 👤 User preference input for comfort-based optimization
+
+---
+
+## Technology Stack
+
+* **Frontend (Mobile App):** React Native
+* **Backend API:** FastAPI (Python)
+* **Machine Learning:** Multi-Layer Perceptron (MLP)
+* **Cloud Platform:** Firebase Realtime Database
+* **Embedded System:** ESP32
+* **Communication:** REST APIs + Firebase listeners
+* **Version Control:** Git & GitHub
+
+---
+
+## Hardware Control Flow
+
+1. User interacts with the mobile app
+2. Control commands are written to Firebase
+3. ESP32 reads commands from Firebase
+4. ESP32 actuates electric or gas heating components
+5. Sensor data is sent back to Firebase
+6. App UI updates in real time
+
+---
+
+## Installation & Setup
+
+### 1️⃣ Clone the repository
 
 ```bash
-# using npm
+git clone https://github.com/USERNAME/REPO_NAME.git
+cd REPO_NAME
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Firebase configuration
+
+Create a Firebase project and add your configuration in the app (do **not** upload API keys).
+
+### 4️⃣ Run the app
+
+```bash
 npm start
-
-# OR using Yarn
-yarn start
 ```
-
-## Step 2: Start your Application
-
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
-
-### For iOS
-
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
-
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
-
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.

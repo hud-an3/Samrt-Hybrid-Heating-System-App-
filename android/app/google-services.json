@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "263075982845",
+    "firebase_url": "https://buzzer-3294a-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "buzzer-3294a",
+    "storage_bucket": "buzzer-3294a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263075982845:android:6d43eba90a1a88a12c7d94",
+        "android_client_info": {
+          "package_name": "com.newapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoenfap-8x3fdGgFn0Kso2mCCzsRiqJgA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

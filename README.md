@@ -1,8 +1,12 @@
 # Smart Hybrid Heating System – Mobile App
 
-## Overview
+This repository contains the **React Native mobile application** developed as part of my **Smart Hybrid Heating System** final year project and published paper.
+>**"Development of a Smart Hybrid Heating System with Intelligent Energy Management*"**
+>Noor-Ul-Huda, Muhammad Muneeb Khan, Abd Ur Rehman and Mumajjed Ul Mudassir.
+>*IEEE/ICoDT2,2025.*
+>[[Read the Paper](https://ieeexplore.ieee.org/document/11360742)]
 
-This repository contains the **React Native mobile application** developed as part of my **Smart Hybrid Heating System** final year project.
+## Overview
 
 The app serves as the **user interface and control layer** for a hybrid **Electric + Gas heating system**, enabling real-time monitoring, intelligent control, and user feedback. It is integrated with **Firebase Cloud** for data synchronization, communicates with **ESP32-based hardware**, and leverages a **Machine Learning (MLP) model** deployed via **FastAPI** for intelligent decision-making.
 
@@ -29,7 +33,6 @@ The mobile app acts as the bridge between the user, cloud, hardware, and ML mode
 * **Cloud Platform:** Firebase Realtime Database
 * **Embedded System:** ESP32
 * **Communication:** REST APIs + Firebase listeners
-* **Version Control:** Git & GitHub
 
 ---
 

@@ -21,10 +21,8 @@ import Navigation from './navigation';
 // --- Global Helper Function ---
 async function fetchWeatherDetails() {
   try {
-    // IMPORTANT: Replace YOUR_LAT, YOUR_LON with actual values.
-    // Store YOUR_API_KEY securely, not hardcoded in production.
     const res = await fetch(
-      'https://api.openweathermap.org/data/3.0/onecall?lat=33.738045&lon=73.084488&appid=22cfcc23d77d38dd463323cc646040f6' // Removed curly braces and placeholder for API key
+      '' //placeholder for API key
     );
     if (!res.ok) {
       throw new Error(`Weather API request failed with status ${res.status}`);

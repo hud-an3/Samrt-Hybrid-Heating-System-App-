@@ -12,12 +12,12 @@ The mobile app acts as the bridge between the user, cloud, hardware, and ML mode
 
 ## Key Features
 
-* 📱 Real-time temperature and system status monitoring
-* 🔥 Manual and automatic switching between **Electric** and **Gas** heating modes
-* 🤖 Intelligent heating recommendations using an **MLP model**
-* ☁️ Cloud-based control via **Firebase Realtime Database**
-* ⚙️ Remote hardware control through ESP32
-* 👤 User preference input for comfort-based optimization
+*  Real-time temperature and system status monitoring
+*  Manual and automatic switching between **Electric** and **Gas** heating modes
+*  Intelligent heating recommendations using an **MLP model**
+*  Cloud-based control via **Firebase Realtime Database**
+*  Remote hardware control through ESP32
+*  User preference input for comfort-based optimization
 
 ---
 
@@ -46,22 +46,22 @@ The mobile app acts as the bridge between the user, cloud, hardware, and ML mode
 
 ## Installation & Setup
 
-### 1️⃣ Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/USERNAME/REPO_NAME.git
 cd REPO_NAME
 ```
 
-### 2️⃣ Install dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3️⃣ Firebase configuration
+### Firebase configuration
 
-Create a Firebase project and add your configuration in the app (do **not** upload API keys).
+Create a Firebase project and add your configuration in the app.
 
 ### 4️⃣ Run the app
 
